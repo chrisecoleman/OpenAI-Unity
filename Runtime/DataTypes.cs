@@ -99,13 +99,14 @@ namespace OpenAI
     public struct CreateChatCompletionResponse : IResponse
     {
         public ApiError Error { get; set; }
-        public string Warning { get; set; }
         public string Model { get; set; }
         public string Id { get; set; }
         public string Object { get; set; }
         public long Created { get; set; }
         public List<ChatChoice> Choices { get; set; }
         public Usage Usage { get; set; }
+        // Add these fields
+        public string SystemFingerprint { get; set; }
     }
     
     public struct ChatChoice
