@@ -94,8 +94,6 @@ namespace OpenAI
         public float? FrequencyPenalty { get; set; } = 0;
         public Dictionary<string, string> LogitBias { get; set; }
         public string User { get; set; }
-
-        public 
     }
 
     public struct CreateChatCompletionResponse : IResponse
@@ -118,7 +116,6 @@ namespace OpenAI
         public ChatMessage Delta { get; set; }
         public int? Index { get; set; }
         public string FinishReason { get; set; }
-        public Boolean logprobs {get; set; }
     }
 
     public struct ChatMessage
